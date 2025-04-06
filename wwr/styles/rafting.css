@@ -3,26 +3,31 @@
     ---secondary-color: #E9EDC9;
     --accent1-color: #D4A373;
     ---accent2-color:#FAEDCD;
+    --font-primary: "Saira Semi Condensed", sans-serif;
+    --font-secondary: "Nunito Sans", sans-serif;
 
 }
 
+body{
+    margin: 0;
+}
 
 h1{
-    font-family: "Saira Semi Condensed", sans-serif;
+    font-family: var(--font-primary);
     font-weight: 700;
     font-style: normal;
     color: var(--primary-color);
 }
 
 h2 {
-    font-family: "Saira Semi Condensed", sans-serif;
+    font-family: var(--font-primary);
     font-weight: 500;
     font-style: normal;
     color: var(--accent1-color);
 }
 
 p {
-    font-family: "Nunito Sans", sans-serif;
+    font-family: var(--font-secondary);
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
@@ -38,7 +43,8 @@ p {
     display: flex;
     justify-content: end;
     align-items: center;
-    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .socialHiperlinks p {
@@ -46,17 +52,18 @@ p {
 }
 
 header{
-    margin: 1rem auto;
 	display: grid;
 	grid-template-columns: 60vh 1fr;
 	align-items: center;
-	max-width: 1000px;
+	max-width: 100%;
     padding: 0px 20px 0px 20px;
+    background: var(---accent2-color);
 }
 
 header img {
     width: 100px;
     height: auto;
+    padding: 10px;
 }
 
 header nav{
@@ -77,6 +84,7 @@ header nav{
     position: relative;
     width: 100%;
     overflow: hidden;
+
 }
 .hero h1 {
     position: absolute;
@@ -140,18 +148,34 @@ header nav{
     margin: 0 10px;
 }
 
+#galley-bg {
+background: var(---secondary-color);
+}
+.team-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+
+}
+
 .gallery figure {
     border: thin #c0c0c0 solid;
     display: flex;
     flex-flow: column;
     padding: 5px;
-    max-width: 220px;
+    max-width: auto;
     margin: auto;
 }
 
-.gallery img {
+.img-gallery {
     max-width: 220px;
     max-height: 150px;
+}
+
+.employee {
+    max-width: 340px;
+    max-height: 420px;
 }
 
 .gallery figcaption {
@@ -164,8 +188,9 @@ header nav{
 
 .gallery{
     display: flex;
-    flex-direction: row
-    ;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
 }
 
 footer {
@@ -174,3 +199,134 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
+.contact-section{
+    background: var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    
+}
+
+.contact-section p {
+    text-align: center;
+    margin: 0px;
+}
+
+.contact-section h1 {
+    text-align: center;
+    margin: 0px;
+    padding-top: 10px;
+    color: white;
+    font-size: 3rem;
+}
+
+.contact-section div {
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    width: 40%;
+}
+
+.contact-section div ul {
+    list-style: none;
+}
+
+.contact-section div ul li {
+    font-size: 1.5rem;
+    font-family: var(--font-secondary);
+    font-weight: 500;
+
+}
+.contact-section div ul li a {
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-decoration: none;
+    color: black;
+}
+
+
+.address{
+    background: var(--accent1-color);
+    padding: 10px;
+}
+
+.question-section{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+}
+
+.question-option{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.text-area-message{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.question-option p {
+    margin:0px;
+}
+
+.form{
+    background: var(--primary-color);
+    padding: 10px;
+}
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid white;
+    padding: 1rem;
+  }
+  legend {
+    padding: 0.5rem;
+    color: white;
+    font-size: 1.3em;
+    font-family: var(--font-primary);
+  }
+  label, input, button, textarea {
+    font-family: var(--font-secondary)
+  }
+button {
+    margin: 1rem;
+    background-color: var(---secondary-color);
+    color: black;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+  }
+  label {
+    text-align: left;
+    padding-right: 1rem;
+    
+  }
+
+  input, textarea {
+    padding: 0.1rem;
+    font-size: 1.1rem;
+  }
+  button:hover {
+    background-color: var(---accent2-color);
+  }
+  input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+  }
+  input[type="radio"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+  }

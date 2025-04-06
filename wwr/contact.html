@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Lusitana:wght@400;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>WWR - Contact</title>
+    <link rel="stylesheet" href="./styles/rafting.css">
+</head>
+<body>
+    <header>
+        <img src="./images/logo-rafting.png" alt="rafting-logo"/>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <div class="contact-info">
+                <h1>Contact us!</h1>
+                <ul>
+                    <li>Address: <a href="https://www.google.com/maps/place/Whitewater+River/@33.7566542,-116.3081931,11z/data=!4m14!1m7!3m6!1s0x80da4263f3166b7d:0xa4b45b9c6fb1039c!2sWhitewater+River!8m2!3d33.5905028!4d-116.1200471!16zL20vMGN0eHc2!3m5!1s0x80da4263f3166b7d:0xa4b45b9c6fb1039c!8m2!3d33.5905028!4d-116.1200471!16zL20vMGN0eHc2!5m1!1e1?entry=ttu&g_ep=EgoyMDI1MDQwMS4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" target="_blank">Whitewater River California, USA</a></li>
+                    <li>Phone number: <a href="https://www.whatsapp.com/" target="_blank" >+1 890 9900-8877</a></li>
+                    <li>Email: <a href="https://mail.google.com" target="_blank">Whitewaterriver@gmail.com</a> </li>
+                </ul>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212297.93517104295!2d-116.30819309828786!3d33.756654171792434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80da4263f3166b7d%3A0xa4b45b9c6fb1039c!2sWhitewater%20River!5e0!3m2!1sen!2ssv!4v1743735426263!5m2!1sen!2ssv" width="60% " height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="team-section" id="galley-bg">
+            <h2>OUR TEAM!</h2>
+            <div class="gallery">
+                <figure>
+                    <img class="employee" width="340" height="420" src="./images/employee1.jpg" alt="employee-1"/>
+                    <figcaption>Impact</figcaption>
+                </figure>
+                <figure>
+                    <img class="employee" width="340" height="420" src="./images/employee2.jpg" alt="employee-2"/>
+                    <figcaption>Sociable</figcaption>
+                </figure>
+                <figure>
+                    <img class="employee" width="340" height="420" src="./images/employee3.jpg" alt="employee-3"/>
+                    <figcaption>Commitment</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="form"> 
+            <form>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                        <label>Full Name: <input type="text" name="fullname"></label>
+                        <label>Email: <input type="email" name="useremail"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Questions</legend>
+                    <div class="question-option">
+                        <p>Please select the purpose of your message:</p>
+                        <label>
+                            <input type="radio" name="messagePurpose" value="general">
+                            General Inquiry
+                        </label>
+
+                        <label>
+                            <input type="radio" name="messagePurpose" value="reservation">
+                            Reservation Question
+                        </label>
+
+                        <label>
+                            <input type="radio" name="messagePurpose" value="suggestion">
+                            Website Suggestion
+                        </label>
+                        <div class="text-area-message">
+                            <label for="feedback">Message:</label>
+                            <textarea id="feedback" name="feedback" rows="4" placeholder="Type your message here!"></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="suscription">Please subscribe me to the monthly newsletter</label>
+                        <input type="checkbox" id="suscription" name="suscription">
+                    </div>
+                </fieldset>
+                <button type="submit">Submit question</button>
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <nav class="sociallinks socialHiperlinks">
+            <a href="#">
+                <img src="./images/facebook-logo.png" alt="facebook"/>
+            </a>
+            <a href="#">
+                <img src="./images/instagram-logo.png" alt="instagram"/>
+            </a>
+            <a href="#">
+                <img src="./images/x-logo.png" alt="twitter"/>
+            </a>
+        </nav>
+        <p>&copy; 2020 white water rafting - Provo Utah</p>
+
+    </footer>
+</body>
+</html>
